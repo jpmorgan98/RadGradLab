@@ -1,0 +1,22 @@
+c Godiva is a critical bare sphere of uranium
+c Cell cards
+1 1 -2.562 -1 	imp:n=1	$ enriched uranium cube (godiva)
+2 0 1 imp:n=0	$ all space outside the sphere
+
+c Surface cards
+*1 rpp 0 150 0 150 0 180	$ corners of the godiva cube
+
+c Data cards
+c skip 25, run 100 total keff cycles, 10000 neutrons per cycle
+kcode 	10000 1.0 25 100 $ kcode defines a criticality calculation
+ksrc 	75 75 90 
+m1 92234 1.519e-08
+   92235 8.919e-06
+   92238 2.793e-04
+   08016 5.641e-04
+   07014 2.514e-06
+   06012 9.882e-01
+   06013 1.059e-02
+   18040 1.369e-08
+
+print 			$ more useful information in the output file
